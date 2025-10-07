@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Mark Rowel Decano</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            background-color: #B3E5FC; /* Baby Blue background */
+            color: #000; /* Black text */
+        }
+
+        .profile-section {
+            display: flex;
+            gap: 30px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 40px auto;
+            background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            color: #E1F5FE; /* Light blue text */
+        }
+
+        .profile-image {
+            flex: 0 0 200px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #B3E5FC; /* Baby blue border */
+        }
+
+        .profile-info {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .profile-info h2 {
+            margin-top: 0;
+            color: #B3E5FC;
+            font-size: 2em;
+        }
+
+        .info-item {
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #E1F5FE;
+            display: inline-block;
+            width: 100px;
+        }
+
+        .description {
+            margin-top: 20px;
+            line-height: 1.6;
+            color: #E1F5FE;
+        }
+
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            background: #000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+        .nav-menu a {
+            display: block;
+            padding: 15px 25px;
+            text-decoration: none;
+            color: #B3E5FC; /* Baby Blue text */
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-menu a:hover {
+            background: #111;
+            border-bottom-color: #B3E5FC;
+        }
+
+        .nav-menu a.active {
+            color: #B3E5FC;
+            border-bottom-color: #B3E5FC;
+        }
+
+        .content-section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 30px auto;
+            background: rgba(0, 0, 0, 0.8); /* Black card */
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            color: #E1F5FE;
+        }
+
+        .content-section h2 {
+            color: #B3E5FC;
+            border-bottom: 2px solid #B3E5FC;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .resume-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(179, 229, 252, 0.1); /* Transparent baby blue */
+            border-radius: 8px;
+            border-left: 4px solid #B3E5FC;
+        }
+
+        .resume-item h3 {
+            margin: 0 0 10px 0;
+            color: #B3E5FC;
+        }
+
+        .resume-item p {
+            margin: 5px 0;
+            line-height: 1.6;
+            color: #E1F5FE;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: rgba(179, 229, 252, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #B3E5FC;
+        }
+
+        .skill-category h4 {
+            margin: 0 0 15px 0;
+            color: #B3E5FC;
+        }
+
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-category li {
+            padding: 5px 0;
+            color: #E1F5FE;
+        }
+
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-image {
+                flex: none;
+                align-self: center;
+            }
+
+            .nav-menu {
+                flex-wrap: wrap;
+            }
+
+            .nav-menu a {
+                padding: 12px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="profile-section">
+        <div class="profile-image">
+            <img src="C:\Users\Mia Cabanza\Desktop\decano mark\image\mark rowel.jpg" alt="Mark Rowel Decano">
+        </div>
+
+        <div class="profile-info">
+            <h2>Mark Rowel Decano</h2>
+
+            <div class="info-item">
+                <span class="info-label">Age:</span>
+                <span>22</span>
+            </div>
+
+            <div class="info-item">
+                <span class="info-label">Address:</span>
+                <span>Biton, Magallanes, Sorsogon</span>
+            </div>
+
+            <div class="info-item">
+                <span class="info-label">Course:</span>
+                <span>Bachelor of Science in Information System</span>
+            </div>
+
+            <div class="description">
+                <strong>Description:</strong><br>
+                Information Systems student dedicated to applying technology to solve real-world problems. Focused on system development, process improvement, and data-driven decision-making. Aspiring to contribute to innovative projects that enhance efficiency and digital transformation.
+            </div>
+        </div>
+    </section>
+
+    <nav class="sticky-nav">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content-section">
+        <h2>Education</h2>
+        <div class="resume-item">
+            <h3>Bachelor of Science in Information System</h3>
+            <p><strong>Sorsogon State University</strong> | 2022 - Present</p>
+            <p>Currently pursuing a degree in Information Systems with a focus on system analysis, database management, and software development.</p>
+            <h3>Senior High School</h3>
+            <p>Biton Magallanes Sorsogon</p>
+            <p><strong>General Academic Strand</strong> | 2019 - 2022</p>
+            <h3>Junior High School</h3>
+            <p>Biton Magallanes Sorsogon | 2015 - 2019</p>
+            <h3>Biton Elementary School</h3>
+            <p>Biton Magallanes Sorsogon | 2009 - 2015</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Programming Languages</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h4>Technologies</h4>
+                <ul>
+                    <li>Outsystems</li>
+                    <li>MySQL</li>
+                    <li>GitHub</li>
+                    <li>Capstone Technical Writing</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h4>Other Skills</h4>
+                <ul>
+                    <li>Swimming</li>
+                    <li>Team Collaboration</li>
+                    <li>Problem-Solving</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Experience</h2>
+        <div class="resume-item">
+            <div class="experience">
+                <h3>Student Developer</h3>
+                <p><strong>Capstone Projects</strong> | 2022 - Present</p>
+                <p>Developing web applications and learning new technologies through hands-on projects and coursework.</p>
+
+                <h3>CWTS Volunteer</h3>
+                <p><strong>Civic Welfare Training Service Program</strong> | 2022 - 2023</p>
+                <p>Participated in community outreach activities focusing on environmental awareness, cleanliness drives, and social responsibility projects that promote civic engagement.</p>
+
+                <h3>Technical Writer</h3>
+                <p><strong>Capstone Documentation</strong> | 2025 - Present</p>
+                <p>Responsible for preparing and organizing technical documentation for the Capstone project, ensuring clarity, accuracy, and professional formatting according to academic standards.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
